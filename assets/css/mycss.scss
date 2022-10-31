@@ -5,6 +5,13 @@ sans-serif;
 $opensans: 'Open Sans',
 sans-serif;
 
+.decore {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -100;
+}
+
 .navbar {
   padding-top: 40px;
   font-family: $poppins;
@@ -22,6 +29,8 @@ sans-serif;
 
 // jumbotron
 .section-jumbotron {
+  margin-bottom: 110px;
+
   .title {
     h5 {
       color: #DF6951;
@@ -56,6 +65,7 @@ sans-serif;
       color: #fff;
       padding: 19px 26px;
       border-radius: 10px;
+      margin-right: 40px;
 
       &:hover {
         background-color: #e19a00;
@@ -69,6 +79,7 @@ sans-serif;
       width: 52px;
       height: 52px;
       border-radius: 100%;
+      margin-right: 20px;
 
       &::before {
         content: '';
@@ -91,6 +102,60 @@ sans-serif;
       font-size: 17px;
       line-height: 25px;
       font-weight: 500;
+      color: #686D77;
+    }
+  }
+}
+
+// services
+.section-services {
+  h2 {
+    font-family: $poppins;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    color: #5E6282;
+  }
+
+  h1 {
+    font-family: $volkhov;
+    font-size: 50px;
+    line-height: 64px;
+    font-weight: 700;
+    color: #14183E;
+  }
+
+  .content {
+    margin-top: 70px;
+    gap: 75px;
+
+    .card-services {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 260px;
+
+      h5 {
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #1E1D4C;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        color: #5E6282;
+      }
+
+      .image {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        flex-basis: 169px;
+      }
     }
   }
 }
