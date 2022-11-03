@@ -109,6 +109,16 @@ sans-serif;
 
 // services
 .section-services {
+  position: relative;
+  margin-bottom: 160px;
+
+  .bintang {
+    position: absolute;
+    top: 0;
+    right: 10%;
+  }
+
+
   h2 {
     font-family: $poppins;
     font-size: 18px;
@@ -155,6 +165,71 @@ sans-serif;
         align-items: center;
         flex-grow: 1;
         flex-basis: 169px;
+      }
+    }
+  }
+}
+
+// destinations
+.section-destinations {
+  margin-bottom: 170px;
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #5E6282;
+    font-family: $poppins;
+  }
+
+  h1 {
+    font-family: $volkhov;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #14183E;
+  }
+
+  .content {
+    margin-top: 60px;
+
+    .card {
+      // min-width: 315px;
+      flex-basis: 315px;
+      border-radius: 24px;
+      box-shadow: 0px 8px 33px -3px rgba(0, 0, 0, 0.1);
+
+      img {
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        max-height: 327px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .card-body {
+        padding: 20px 20px 40px 20px;
+
+        .arrow {
+          margin-right: 15px;
+        }
+
+        .location {
+          h5 {
+            font-family: $poppins;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #5E6282;
+          }
+        }
+
+        span {
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 500;
+          font-family: $poppins;
+        }
       }
     }
   }
